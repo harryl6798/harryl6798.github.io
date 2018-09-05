@@ -1,0 +1,36 @@
+p {
+  background-color: white;
+  color: blue;
+  font-family: cursive comic sans-serif font-size: 22pt;
+}
+p.gr
+{
+    color: blue;
+    background-color: gray;
+}
+body {
+  background-image: url(texas.jpg);
+  background-size: 10%;
+  background-image o
+  background-repeat: repeat;
+  background-color: gray;
+}
+body::after
+{
+  
+}
+image
+{
+
+}
+a
+{
+    background-color: white;
+    color: red;
+}
+
+a:hover
+{
+    background-color: blue;
+    color: lightgreen;
+}

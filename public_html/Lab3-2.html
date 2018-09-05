@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="fileName.js">
+	</script>
+	<title> Justin told me to make one </title>
+</head>
+
+<body>
+	Justin's Nerdy Pictures
+			<script>
+			
+				var arrayofImages = new Array();
+				arrayofImages[0] = new Image();
+				arrayofImages[0].src = "1.jpg";
+				arrayofImages[1] = new Image();
+				arrayofImages[1].src = '2.jpg';
+				arrayofImages[2] = new Image();
+				arrayofImages[2].src = '3.jpg';
+				arrayofImages[3] = new Image();
+				arrayofImages[3].src = '4.jpg';
+				arrayofImages[4] = new Image();
+				arrayofImages[4].src = '5.jpg'; //Taken from stackoverflow https://stackoverflow.com/questions/8810927/showing-an-image-from-an-array-of-images-javascript
+				var currentpic = 0;
+	
+				function nextPic() {
+					currentpic++;
+					if(currentpic>=arrayofImages.length)
+					{
+						currentpic=0;
+					}
+					document.getElementById("thePic").src = arrayofImages[currentpic].src;
+	
+				}
+	
+				function prevPic() {
+					currentpic--;
+					if(currentpic<0)
+					{
+						currentpic=arrayofImages.length-1;
+					}
+					document.getElementById("thePic").src = arrayofImages[currentpic].src;
+				}
+			</script>
+	<form>
+
+		<img src="1.jpg"alt="Justin" height="800" width="700" id="thePic">
+		<br>
+		<button type="button" onclick="prevPic()" id="prevButt">Previous</button>
+		<button type="button" onclick="nextPic()" id="nextButt">Next</button>
+
+
+
+	</form>
+
+
+</body>
+
+</html>
